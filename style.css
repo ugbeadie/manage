@@ -157,7 +157,7 @@ nav {
     display: flex;
     position: absolute;
     top: 30px;
-    right: 20px;
+    right: 35px;
     flex-direction: column;
     justify-content: space-between;
     height: 30px;
@@ -262,7 +262,7 @@ nav {
   .hero-content {
     display: flex;
     flex-direction: column-reverse;
-    /* width: 100%; */
+    width: 91%;
     margin: 20px;
     text-align: center;
   }
@@ -271,14 +271,14 @@ nav {
     height: 100%;
   }
   .left h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .left,
   .left p {
     width: 100%;
   }
   .left p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .hero-btn {
     font-size: 18px;
