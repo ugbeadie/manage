@@ -119,12 +119,13 @@ nav {
     z-index: 1;
   }
   .carousel {
-    display: flex;
+    display: block;
+    text-align: center;
     /* position: relative; */
   }
 
   .carousel-head {
-    height: 20vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,12 +140,15 @@ nav {
   }
 
   .carousel-img {
+    position: relative;
+    bottom: 50px;
     width: 30%;
     height: 30%;
   }
 
   .carousel-item {
-    padding: 0 30px 50px 30px;
+    padding: 30px;
+    background-color: var(--lightgray);
   }
 
   .carousel-item h6 {
@@ -164,6 +168,17 @@ nav {
     background-color: var(--brightred);
     position: relative;
     bottom: 0;
+  }
+  .carousel-btn {
+    border: none;
+    /* font-size: 30px; */
+    background-color: var(--brightred);
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: var(--palered);
+    position: relative;
+    top: 80px;
   }
   /* .t-btn {
     display: inline-block;
