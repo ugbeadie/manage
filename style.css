@@ -23,10 +23,12 @@ body {
 }
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
+  z-index: 10;
 }
 
 .nav-items ul {
@@ -52,6 +54,7 @@ nav {
   border-radius: 18px;
   font-size: 12px;
   color: var(--palered);
+  box-shadow: 0 15px 8px -8px hsl(12, 88%, 59%);
 }
 
 .toggle-button {
@@ -69,6 +72,14 @@ nav {
 
 .cross {
   --toggle-btn: url(images/icon-close.svg);
+}
+
+.scrolling-active {
+  background-color: var(--palered);
+  transition: 0.5s ease-in;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .hero {
@@ -231,9 +242,20 @@ nav {
 }
 
 .simplify {
-  /* position: relative; */
+  position: relative;
   margin: 80px 0 0 0;
   background-color: var(--brightred);
+  overflow: hidden;
+}
+
+.s-b {
+  position: absolute;
+  top: -150px;
+  left: 200px;
+}
+
+.m-b {
+  display: none;
 }
 
 .s-cont {
@@ -246,7 +268,7 @@ nav {
 .s-cont h3 {
   width: 50%;
   color: var(--lightgray);
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -332,6 +354,11 @@ nav {
   font-size: 12px;
   font-style: italic;
   padding: 10px 80px 0 0;
+}
+
+.f-btn {
+  box-shadow: none;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1150px) {
@@ -438,7 +465,7 @@ nav {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: var(--palered);
+    background-color: var(--lightgray);
     margin-top: 20px;
     padding: 30px;
     position: absolute;
@@ -463,11 +490,22 @@ nav {
     font-size: 20px;
     font-weight: 700;
   }
+  .scrolling-active {
+  background-color: var(--palered);
+  transition: 0.5s ease-in;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
   .hidden {
     overflow: hidden;
   }
   .nav-items.active {
     display: flex;
+    background-color: var(--palered);
+  }
+  nav.active {
+    background-color: var(--palered);
   }
   .carousel {
     display: block;
@@ -645,6 +683,18 @@ nav {
     padding-bottom: 50px;
     /* width: 40px;
     height: 40px; */
+  }
+  .h-b {
+    position: absolute;
+    top: -350px;
+    left: 50px;
+  }
+  .m-b {
+    display: flex;
+    position: absolute;
+  }
+  .a-b {
+    display: none;
   }
 }
 

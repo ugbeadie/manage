@@ -18,7 +18,7 @@
 </head>
 <body>
 <section class="hero">
-  <img class="h-b" src="images/bg-tablet-pattern.svg" alt="">
+  <img class="h-b d-b" src="images/bg-tablet-pattern.svg" alt="">
   <nav>
     <div class="logo">
       <img src="images/logo.svg" alt="">
@@ -26,10 +26,10 @@
     <a class="toggle-button"></a>
     <div class="nav-items">
       <ul>
-        <li><a href="#about" onclick="hideUl()">Pricing</a></li>
-        <li><a href="#" onclick="hideUl()">Product</a></li>
-        <li><a href="#" onclick="hideUl()">About Us</a></li>
-        <li><a href="#products" onclick="hideUl()">Careers</a></li>
+        <li><a href="#about" onclick="hideUl()">About Us</a></li>
+        <li><a href="#product" onclick="hideUl()">Product</a></li>
+        <li><a href="#" onclick="hideUl()">Pricing</a></li>
+        <li><a href="#" onclick="hideUl()">Careers</a></li>
         <li><a href="#footer" onclick="hideUl()">Community</a></li>
       </ul>
     </div>
@@ -38,6 +38,7 @@
 
   <div class="hero-content">
     <div class="left">
+      <!-- <img class="d-b m-b2" src="images/bg-tablet-pattern.svg" alt=""> -->
       <h1>Bring everyone together to build better products.</h1>
       <p>Manage makes it simple for software teams to plan day-to-day
       tasks while keeping the larger team goals in view.</p>
@@ -50,8 +51,8 @@
 
 </section>
 
-<div class="about">
-  <img class="a-b" src="images/bg-tablet-pattern.svg" alt="">
+<div class="about" id="about">
+  <img class="a-b d-b" src="images/bg-tablet-pattern.svg" alt="">
   <div class="about-left">
     <h1>What's different about Manage?</h1>
     <p>Manage provides all the functionality your team needs, without
@@ -94,7 +95,7 @@
   </div>  
 </div>
 
-  <section class="testimonial">
+  <section class="testimonial" id="product">
     <div class="t-head">
       what they've said
     </div>
@@ -163,14 +164,17 @@
 </div>
 
 <div class="simplify">
-  <!-- <img class="s-b" src="images/bg-tablet-pattern.svg" alt=""> -->
+  <img class="s-b d-b" src="images/bg-simplify-section-desktop.svg" alt="">
+  <img class="m-b" src="images/bg-simplify-section-mobile.svg" alt="">
+  <!-- <img class="s-b m-b" src="images/bg-tablet-pattern.svg" alt=""> -->
+  <!-- <img class="s-b2 m-b" src="images/bg-tablet-pattern.svg" alt=""> -->
   <div class="s-cont">
     <h3>Simplify how your team works today.</h1>
     <a href="#"><button class="btn s-btn">Get Started</button></a>
   </div>
 </div>
 
-<section class="footer">
+<section class="footer" id="footer">
   <div class="f-content">
 
     <div class="first">

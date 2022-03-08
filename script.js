@@ -4,7 +4,10 @@ const navMenu = document.querySelector("nav");
 
 toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
+    navMenu.classList.toggle('active');
     document.body.classList.toggle("cross");
+    document.body.classList.toggle('hidden')
+
     // document.body.classList.toggle("black");    
 });
 
@@ -28,18 +31,25 @@ function validation() {
     }
 }
 
+window.addEventListener ('scroll', function() {
+    let navBar = document.querySelector('nav');
+    let windowPosition =  window.scrollY > 500;
+    navBar.classList.toggle('scrolling-active', windowPosition);
+})
+
+
 // window.addEventListener('scroll',  function() {
-//     if (window.scrollY > 770) {
-//         navbar.style.position = 'fixed';
-//         navbar.style.backgroundColor = 'black'; 
+//     if (window.scrollY > 700) {
+//         navMenu.style.position = 'fixed';
+//         navMenu.style.backgroundColor = 'var(--palered)'; 
 //     }else{
-//         navbar.style.position = 'absolute';
-//         navbar.style.backgroundColor = "var(--nav-bg)";
+//         // navMenu.style.position = 'absolute';
+//         navMenu.style.backgroundColor = "white";
 //     }
 // });
 
 function hideUl() {
     document.body.classList.toggle("cross");
-    navbarLinks.classList.toggle('active');
-    // document.body.classList.toggle("black");
+    navUl.classList.toggle('active');
+    document.body.classList.toggle('hidden');
 }
