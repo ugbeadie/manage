@@ -77,7 +77,7 @@ nav {
 .scrolling-active {
   background-color: var(--palered);
   transition: 0.5s ease-in;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -493,7 +493,7 @@ nav {
   .scrolling-active {
   background-color: var(--palered);
   transition: 0.5s ease-in;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -650,7 +650,7 @@ nav {
   }
   .footer {
     position: relative;
-    height: 70vh;
+    height: 90vh;
   }
   .f-content {
     display: flex;
@@ -679,8 +679,19 @@ nav {
   .f-logo {
     padding-top: 40px;
   }
+  .socials img {
+    margin: 0;
+  }
+  
+  .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
   .first .socials img {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     /* width: 40px;
     height: 40px; */
   }
@@ -721,7 +732,10 @@ nav {
     position: absolute;
     bottom: 20px;
     left: 20%;
-  }
+  /* }
+  .inputBox {
+    margin-left: -15px;
+  } */
 }
 
 @media screen and (max-width: 320px) {
