@@ -29,6 +29,7 @@ nav {
   align-items: center;
   padding: 20px 80px;
   z-index: 10;
+  /* position: fixed; */
 }
 
 .nav-items ul {
@@ -73,13 +74,10 @@ nav {
 .cross {
   --toggle-btn: url(images/icon-close.svg);
 }
-
 .scrolling-active {
-  background-color: var(--palered);
   transition: 0.5s ease-in;
   position: sticky;
   top: 0;
-  z-index: 100;
 }
 
 .hero {

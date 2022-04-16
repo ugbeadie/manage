@@ -11,6 +11,29 @@ toggleButton.addEventListener('click', () => {
     // document.body.classList.toggle("black");    
 });
 
+
+// window.addEventListener ('scroll', function() {
+//     let navBar = document.querySelector('nav');
+//     let windowPosition =  window.scrollY > 500;
+//     navBar.classList.toggle('scrolling-active', windowPosition);
+// })
+
+window.addEventListener('scroll',  function() {
+    if (window.scrollY > 600) {
+        navMenu.style.position = 'fixed';
+        navMenu.style.backgroundColor = 'black';
+    }else{
+        navMenu.style.position = 'absolute';
+        navMenu.style.backgroundColor = "var(--nav-bg)";
+    }
+});
+
+function hideUl() {
+    document.body.classList.toggle("cross");
+    navUl.classList.toggle('active');
+    document.body.classList.toggle('hidden');
+}
+
 function validation() {
     var form = document.getElementById('form');
     var email = document.getElementById('email').value;
@@ -29,27 +52,4 @@ function validation() {
         text.innerHTML = 'Please Insert A Valid Email Address';
         text.style.color = 'var(--brightred)';
     }
-}
-
-window.addEventListener ('scroll', function() {
-    let navBar = document.querySelector('nav');
-    let windowPosition =  window.scrollY > 500;
-    navBar.classList.toggle('scrolling-active', windowPosition);
-})
-
-
-// window.addEventListener('scroll',  function() {
-//     if (window.scrollY > 700) {
-//         navMenu.style.position = 'fixed';
-//         navMenu.style.backgroundColor = 'var(--palered)'; 
-//     }else{
-//         // navMenu.style.position = 'absolute';
-//         navMenu.style.backgroundColor = "white";
-//     }
-// });
-
-function hideUl() {
-    document.body.classList.toggle("cross");
-    navUl.classList.toggle('active');
-    document.body.classList.toggle('hidden');
 }
