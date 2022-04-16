@@ -1,10 +1,10 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0]
 const navUl = document.getElementsByClassName("nav-items")[0]
-// const navMenu = document.querySelector("nav");
+const navMenu = document.querySelector("nav");
 
 toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
-    // navMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
     document.body.classList.toggle("cross");
     document.body.classList.toggle('hidden')
 
@@ -19,12 +19,12 @@ toggleButton.addEventListener('click', () => {
 // })
 
 window.addEventListener('scroll',  function() {
-    if (window.scrollY > 600) {
+    if (window.scrollY > 500) {
         navMenu.style.position = 'fixed';
-        navMenu.style.backgroundColor = 'black';
+        navMenu.style.backgroundColor = 'var(--palered)';
     }else{
         navMenu.style.position = 'absolute';
-        navMenu.style.backgroundColor = "var(--nav-bg)";
+        navMenu.style.backgroundColor = "rgba(0, 0, 0, 0)";
     }
 });
 
