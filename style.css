@@ -461,9 +461,6 @@ nav {
     height: 30px;
     width: 30px;
   }
-  .palered {
-    --nav-bg: hsl(13, 100%, 96%)
-  }
   .nav-items {
     display: none;
     flex-direction: column;
@@ -494,13 +491,6 @@ nav {
     font-size: 20px;
     font-weight: 700;
   }
-  .scrolling-active {
-  background-color: var(--palered);
-  transition: 0.5s ease-in;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
   .hidden {
     overflow: hidden;
   }
@@ -509,7 +499,11 @@ nav {
     background-color: var(--palered);
   }
   nav.active {
-    background-color: var(--palered);
+    display: flex;
+    /* background-color: var(--palered); */
+  }
+  .palered {
+    --nav-bg: hsl(13, 100%, 96%);
   }
   .hero-content {
     padding-top: 100px;

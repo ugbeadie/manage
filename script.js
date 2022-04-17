@@ -5,19 +5,12 @@ const navMenu = document.querySelector("nav");
 toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
     navMenu.classList.toggle('active');
+    // navMenu.style.backgroundColor = "var(--nav-bg)";
+
     document.body.classList.toggle("cross");
-    document.body.classList.toggle("black");
+    document.body.classList.toggle("palered");
     document.body.classList.toggle('hidden')
-
-    // document.body.classList.toggle("black");    
 });
-
-
-// window.addEventListener ('scroll', function() {
-//     let navBar = document.querySelector('nav');
-//     let windowPosition =  window.scrollY > 500;
-//     navBar.classList.toggle('scrolling-active', windowPosition);
-// })
 
 window.addEventListener('scroll',  function() {
     if (window.scrollY > 500) {
@@ -25,7 +18,7 @@ window.addEventListener('scroll',  function() {
         navMenu.style.backgroundColor = 'var(--palered)';
     }else{
         navMenu.style.position = 'absolute';
-        navMenu.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        navMenu.style.backgroundColor = "var(--nav-bg)";
     }
 });
 
@@ -33,6 +26,7 @@ function hideUl() {
     document.body.classList.toggle("cross");
     navUl.classList.toggle('active');
     document.body.classList.toggle('hidden');
+    document.body.classList.toggle("palered");
 }
 
 function validation() {
