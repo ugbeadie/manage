@@ -6,6 +6,7 @@ toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
     navMenu.classList.toggle('active');
     document.body.classList.toggle("cross");
+    document.body.classList.toggle("black");
     document.body.classList.toggle('hidden')
 
     // document.body.classList.toggle("black");    

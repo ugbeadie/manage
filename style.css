@@ -461,6 +461,9 @@ nav {
     height: 30px;
     width: 30px;
   }
+  .palered {
+    --nav-bg: hsl(13, 100%, 96%)
+  }
   .nav-items {
     display: none;
     flex-direction: column;
