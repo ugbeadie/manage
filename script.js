@@ -5,8 +5,7 @@ const navMenu = document.querySelector("nav");
 toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
     navMenu.classList.toggle('active');
-    // navMenu.style.backgroundColor = "var(--nav-bg)";
-
+    navMenu.style.backgroundColor = "var(--nav-bg)";
     document.body.classList.toggle("cross");
     document.body.classList.toggle("palered");
     document.body.classList.toggle('hidden')

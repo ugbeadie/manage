@@ -455,7 +455,7 @@ nav {
     display: flex;
     position: absolute;
     top: 15px;
-    right: 30px;
+    right: 15px;
     flex-direction: column;
     justify-content: space-between;
     height: 30px;
